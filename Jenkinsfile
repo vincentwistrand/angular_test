@@ -7,10 +7,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'node -v'
-                sh 'npm -v'
-                sh 'cd myAngular'
-                sh 'npm ci'
+                dir('./myAngular') {
+                    sh 'node -v'
+                    sh 'npm -v'
+                    sh 'npm ci'
+                }
             }
         }
     }
