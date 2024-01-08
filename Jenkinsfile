@@ -8,9 +8,7 @@ pipeline {
         stage('build') {
             steps {
                 dir('./myAngular') {
-                    sh 'node -v'
-                    sh 'npm -v'
-                    sh 'pwd'
+                    sh 'ls -al'
                 }
             }
         }
