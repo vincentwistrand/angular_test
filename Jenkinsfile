@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:20-alpine'
+            args '-u vincent'
         }
     }
     stages {
@@ -9,6 +10,7 @@ pipeline {
             steps {
                 dir('./myAngular') {
                     sh 'whoami'
+                    sh 'npm ci'
                 }
             }
         }
