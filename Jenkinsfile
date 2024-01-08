@@ -10,7 +10,7 @@ pipeline {
                 dir('./myAngular') {
                     sh 'node -v'
                     sh 'npm -v'
-                    sh 'npm ci'
+                    sh 'pwd'
                 }
             }
         }
