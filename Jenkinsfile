@@ -8,7 +8,7 @@ pipeline {
         stage('build') {
             steps {
                 dir('./myAngular') {
-                    sh 'npm ci'
+                    sh 'whoami'
                 }
             }
         }
