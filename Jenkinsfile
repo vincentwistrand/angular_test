@@ -8,7 +8,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'node -v'
-                sh 'npm -'
+                sh 'npm -v'
                 sh 'cd myAngular'
                 sh 'npm ci'
             }
