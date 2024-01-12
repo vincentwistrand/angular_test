@@ -4,6 +4,9 @@ pipeline {
             image 'node:20-alpine'
         }
     }
+    environment {
+        NPM_CONFIG_CACHE = './.npm'
+    }
     stages {
         stage('build') {
             steps {
