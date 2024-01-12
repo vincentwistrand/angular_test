@@ -9,7 +9,7 @@ pipeline {
             steps {
                 dir('./myAngular') {
                     sh 'pwd'
-                    sh 'ls -a'
+                    sh 'ls -al'
                     sh 'npm ci'
                 }
             }
