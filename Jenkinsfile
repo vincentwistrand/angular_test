@@ -14,6 +14,7 @@ pipeline {
                     sh 'pwd'
                     sh 'ls -al'
                     sh 'npm ci'
+                    sh 'ls -al'
                 }
             }
         }
